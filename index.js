@@ -8,7 +8,7 @@ const TransactionPool = require('./wallet/transaction-pool')
 const Wallet = require('./wallet');
 const TransactionMiner = require('./app/transaction-miner')
 const isDevelopment = process.env.ENV === 'development';
-const REDIS_URL = isDevelopment ? 'redis://127.0.0.1.6379' : 'redis ://h:p9d3abe1037f988fcb8ee9b1bb418864295c7c5aac8bf130874d1aad4eb2220e1@ec2-18-210-203-66.compute-1.amazonaws.com:11469'
+const REDIS_URL = isDevelopment ? 'redis://127.0.0.1.6379' : 'redis://h:p9d3abe1037f988fcb8ee9b1bb418864295c7c5aac8bf130874d1aad4eb2220e1@ec2-18-210-203-66.compute-1.amazonaws.com:11469'
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`;
 
